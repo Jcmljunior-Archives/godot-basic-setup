@@ -1,0 +1,30 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Godot Basic Setup"
+run/main_scene="res://features/counter/scenes/counter.tscn"
+config/features=PackedStringArray("4.2", "Forward Plus")
+config/icon="res://icon.svg"
+
+[autoload]
+
+Sentinela="*res://features/sentinela/scripts/sentinela.gd"
+Store="*res://features/store/scripts/store.gd"
+Collections="*res://features/store/scripts/collections.gd"
+CounterConstants="*res://features/counter/constants/counter_constants.gd"
+CounterActions="*res://features/counter/actions/defaults.gd"
+CounterReducers="*res://features/counter/reducers/defaults.gd"
+Panku="*res://addons/panku_console/console.tscn"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/format_on_save/plugin.cfg", "res://addons/gut/plugin.cfg", "res://addons/panku_console/plugin.cfg")
