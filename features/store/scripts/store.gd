@@ -11,7 +11,7 @@ enum ListenerDispatchMode {
 }
 
 
-var defaults = func(storage: Dictionary) -> Dictionary:
+var store = func(storage: Dictionary) -> Dictionary:
 	var state: Dictionary = {}
 	var store: Dictionary = {}
 	var response: Callable
@@ -23,10 +23,12 @@ var defaults = func(storage: Dictionary) -> Dictionary:
 	if "store" in storage: store = storage.get("store")
 	
 	return {
+		
 		"state": state,
 		
 		# A função "register" define em escala global, o acesso as definições dos redutores.
 		"register": func(config: Dictionary) -> void:
+			
 			# Validações com requisitos minimos para execução da função.
 			if not "state" in config:
 				printerr("Oppss, o estado inicial não foi encontrado.")
@@ -170,5 +172,5 @@ var defaults = func(storage: Dictionary) -> Dictionary:
 	}
 
 func get_instance(storage: Dictionary = {}):
-	return defaults.call(storage)
+	return store.call(storage)
 

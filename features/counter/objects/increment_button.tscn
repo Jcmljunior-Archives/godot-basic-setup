@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://b4i4ac6n60l3o"]
+
+[ext_resource type="Script" path="res://features/counter/scripts/increment_counter.gd" id="1_uln0t"]
+
+[node name="IncrementButton" type="Button"]
+custom_minimum_size = Vector2(145, 45)
+theme_override_font_sizes/font_size = 18
+text = "Incrementar"
+script = ExtResource("1_uln0t")
+
+[connection signal="pressed" from="." to="." method="_on_increment_button_pressed"]

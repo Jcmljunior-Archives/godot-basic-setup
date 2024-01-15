@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://cakdkdwj17y6e"]
+
+[ext_resource type="Script" path="res://features/counter/scripts/decrement_counter.gd" id="1_bsfvp"]
+
+[node name="DecrementButton" type="Button"]
+custom_minimum_size = Vector2(145, 45)
+theme_override_font_sizes/font_size = 18
+text = "Decrementar"
+script = ExtResource("1_bsfvp")
+
+[connection signal="pressed" from="." to="." method="_on_decrement_button_pressed"]

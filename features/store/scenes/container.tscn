@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://b740gesyse8w7"]
+
+[ext_resource type="PackedScene" uid="uid://ckyjojyr2cnaf" path="res://features/counter/scenes/counter.tscn" id="1_adc5b"]
+[ext_resource type="Script" path="res://features/store/scripts/container.gd" id="1_n74mr"]
+
+[node name="StateManager" type="Node"]
+script = ExtResource("1_n74mr")
+
+[node name="Counter" parent="." instance=ExtResource("1_adc5b")]
+
+[editable path="Counter"]

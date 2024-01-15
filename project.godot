@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Godot Basic Setup"
-run/main_scene="res://features/counter/scenes/counter.tscn"
+run/main_scene="res://features/store/scenes/container.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -24,6 +24,7 @@ CounterConstants="*res://features/counter/constants/counter_constants.gd"
 CounterActions="*res://features/counter/actions/defaults.gd"
 CounterReducers="*res://features/counter/reducers/defaults.gd"
 Panku="*res://addons/panku_console/console.tscn"
+Observables="*res://features/counter/observables/defaults.gd"
 
 [editor_plugins]
 
