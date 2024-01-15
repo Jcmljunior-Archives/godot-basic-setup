@@ -67,6 +67,7 @@ var store = func(storage: Dictionary) -> Dictionary:
 				for key in store.keys():
 					# Ignora o indice caso não haja relação com a ação.
 					if not "accept_action" in store[key]:
+						printerr("O acesso ao redutor %s não esta autorizado para essa ação ou a chave accept_action não existe." % key)
 						continue
 					
 					# Validação da relação entre a ação e o redutor.
