@@ -24,7 +24,6 @@ CounterConstants="*res://features/counter/constants/counter_constants.gd"
 CounterActions="*res://features/counter/actions/defaults.gd"
 CounterReducers="*res://features/counter/reducers/defaults.gd"
 Panku="*res://addons/panku_console/console.tscn"
-Observables="*res://features/counter/observables/defaults.gd"
 
 [editor_plugins]
 

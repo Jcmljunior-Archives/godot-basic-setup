@@ -4,7 +4,7 @@ var initial_setup = func():
 		"state": {
 			"value": 0,
 			"notifier": true,
-			#"sign": Sentinela.get_instance().get("sign").call(str(0)),
+			"sign": Sentinela.get_instance().get("sign").call(str(0)),
 		},
 		"accept_action": [
 			CounterConstants.INCREMENT_COUNTER,
